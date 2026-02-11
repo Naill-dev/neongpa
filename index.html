@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ümumi Orta Bal Kalkulyatoru – NailDev</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h1>Ümumi Orta Bal Kalkulyatoru</h1>
+
+    <div class="form-grid">
+      <input type="number" id="score" placeholder="Bal (0-100)" min="0" max="100" />
+      <input type="number" id="credit" placeholder="Kredit/saat (məs: 4)" min="1" />
+    </div>
+
+    <button class="add-btn" onclick="addScore()">Əlavə et</button>
+
+    <div class="list" id="subjects-list"></div>
+
+    <div class="result" id="result">
+      Orta bal: <strong id="average">0.00</strong><br>
+      Ümumi kredit: <strong id="totalCredit">0</strong>
+    </div>
+
+    <footer>
+      Nail tərəfindən yaradılıb © 2026
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
